@@ -40,7 +40,7 @@ if __name__ == '__main__':
         print('[!] Incorrect Host Format, It Should Contain Valid IP')
         sys.exit(-1)
     try:
-        if args.port < 0 and args.port > 65535:
+        if (args.port < 0) or (args.port > 65535):
             print('[!] Incorrect Port Number, It Should Be In Range 0-65535')
             sys.exit(-1)
     except:
